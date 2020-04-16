@@ -10,7 +10,7 @@ and open the template in the editor.
 
 @font-face {
     font-family: sketch;
-    src: url(util/fonts/sketch3D.otf);
+    src: url('/sigla/util/fonts/sketch3D.otf');
 }
 
 .home_upper {
