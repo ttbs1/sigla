@@ -10,8 +10,8 @@ and open the template in the editor.
 
 @font-face{
 font-family: 'sketch';
-    src: url('/sigla/sketch3D.woff') format('woff'),
-        url('/sketch3D.ttf') format('truetype');
+    src: url('util/fonts/sketch3D.woff') format('woff'),
+        url('util/fonts/sketch3D.ttf') format('truetype');
 }
 
 .home_upper {
@@ -53,12 +53,11 @@ font-family: 'sketch';
 }
 
 .home_footer .display-4 {
-    font-family: sketch;
+    font-family: 'Londrina Sketch';
 }
 
 .home_footer a {
     color: #fff;
     text-shadow: 1px 1px #f58220;
     font-size: large;
-    font-family: defaul;
 }
