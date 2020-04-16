@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/04/2020, 03:34:41
+    Author     : Thiago
+*/
+
+@font-face {
+    font-family: sketch;
+    src: url(util/fonts/sketch3D.otf);
+}
+
+.home_upper {
+    background-image: url(util/home/1.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    text-shadow: 1px 1px #000;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.home_middle {
+    background-color: #f3f3f3;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.home_middle_2 {
+    background-image: url(util/home/2.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    text-shadow: 1px 1px #000;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.home_footer {
+    background-image: linear-gradient(#aaaaaa, #999999 ,#888888 ,#777777 ,#666666 ,#555555 ,#444444 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #fff;
+    text-shadow: 2px 2px #f58220;
+}
+
+.home_footer .display-4 {
+    font-family: sketch;
+}
+
+.home_footer a {
+    color: #fff;
+    text-shadow: 1px 1px #f58220;
+    font-size: large;
+    font-family: defaul;
+}
