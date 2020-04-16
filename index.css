@@ -10,9 +10,9 @@ and open the template in the editor.
 
 @font-face{
 font-family: 'sketch';
-    src: url('https://github.com/ttbs1/sigla/tree/master/util/fonts/sketch3D.woff') format('woff'),
-        url('https://github.com/ttbs1/sigla/tree/master/util/fonts/sketch3D.ttf') format('truetype'),
-        url('https://github.com/ttbs1/sigla/tree/master/util/fonts/sketch3D.svg') format('svg');
+    src: url('/sigla/util/fonts/sketch3D.woff') format('woff'),
+        url('util/fonts/sketch3D.ttf') format('truetype'),
+        url('/sigla/util/fonts/sketch3D.svg') format('svg');
 }
 
 .home_upper {
