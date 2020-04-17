@@ -23,6 +23,11 @@ and open the template in the editor.
         <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+
 
 
 
@@ -42,94 +47,180 @@ and open the template in the editor.
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Início</a>
+                        <a class="nav-link" href="#inicio" onclick="closenav();">Início</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#sobre" onclick="closenav();">Sobre</a>
                     </li>
                     <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a id="dropdown" class="nav-link dropdown-toggle" onmouseover="opendropdown()" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Serviços
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Sistema de gestão</a>
-                            <a class="dropdown-item" href="#">Site comercial</a>
-                            <a class="dropdown-item" href="#">Aplicativos mobile</a>
-                            <a class="dropdown-item" href="#">Outros</a>
+                            <a class="dropdown-item" href="#sistema" onclick="closenav();">Sistema de gestão</a>
+                            <a class="dropdown-item" href="#site" onclick="closenav();">Site comercial</a>
+                            <a class="dropdown-item" href="#" onclick="closenav();">Aplicativos mobile</a>
+                            <a class="dropdown-item" href="#" onclick="closenav();">Outros</a>
                         </div>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#contato">Contato</a>
+                        <a class="nav-link" href="#contato" onclick="closenav();">Contato</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        
+
         <script>
-            function closenav () {
+            function opendropdown() {
+                if (window.innerHeight < window.innerWidth)
+                    document.getElementById("dropdown").click();
+            }
+            
+            function closenav() {
                 if (window.innerHeight > window.innerWidth)
                     document.getElementById("navbutton").click();
             }
         </script>
 
-        <section class="home_upper">
+        <section id="inicio" class="inicio">
             <div class="container-fluid">
-                <blockquote class="blockquote text-center">
-                    <h1 class="display-4"><strong>SIGLA</strong></h1>
-                    <p><strong>Bem vindo a página da SIGLA,
-                            Sistema Integrado de Gestão e Logistica Aplicada.</strong></p>
-                </blockquote>
+                <div class="container floating-text">
+                    <h1 class="display-4 text-center">SIGLA</h1>
+                    <p><strong>Apresentação:</strong></p>
+                    <p class="text-justify">A SIGLA, Sistema Integrado de Gestão e Logística Aplicada, é uma empresa que surgiu no mercado há mais de 4 anos, 
+                        e conseguiu se consolidar graças a peculiaridades marcantes em sua forma de atender. Com a proposta de trazer uma 
+                        proximidade maior com sua empresa, tornando sua experiência mais exclusiva, a SIGLA analisa cuidadosamente as necessidades individuais do cliente
+                        para buscar sempre a solução mais eficaz. Com um gerenciamento mais organizado, acontecendo de forma ágil e simplificada, você pode colocar 
+                        todo seu foco onde mais interessa: as características do SEU negócio. Atualmente, já contamos com mais de 70 clientes na região do centro-oeste mineiro.</p>
+                </div>
             </div>
         </section>
 
-        <section class="home_middle" id="sobre">
+        <section id="sobre" class="sobre">
             <div class="container-fluid">
-                <blockquote class="blockquote text-center">
-                    <h1 class="display-4"><strong>SIGLA</strong></h1>
-                    <p><strong>Bem vindo a página da SIGLA,
-                            Sistema Integrado de Gestão e Logistica Aplicada.</strong></p>
-                </blockquote>
-            </div>
-        </section>
-
-        <section class="home_middle_2">
-            <div class="container-fluid">
-                <blockquote class="blockquote text-center">
-                    <h1 class="display-4"><strong>SIGLA</strong></h1>
-                    <p><strong>Bem vindo a página da SIGLA,
-                            Sistema Integrado de Gestão e Logistica Aplicada.</strong></p>
-                </blockquote>
-            </div>
-        </section>
-        <section class="home_footer" id="contato">
-            <div class="container-fluid">
-                <blockquote class="blockquote text-center">
-                    <h1 class="display-4"><strong>CONTATO</strong></h1><br>
-                    <p class="display-4"><strong>INFORMAÇÕES DE CONTATO E MÍDIAS SOCIAIS:</strong></p><br>
-                </blockquote>
-
-                <div class="container">
+                <div class="container nocolor text-center">
+                    <h1 class="display-4">SOBRE</h1>
+                    <p><strong>Equipe:</strong></p>
                     <div class="row">
-                        <div class="col-sm text-center">
-                            first of three columns
+                        <div class="col-sm">
+                            <h5>Leandro Rodrigues da Silva:</h5>
+                            <img src="util/home/thiago2.png" width="150px;" style="margin-bottom: 10px;" />
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fas fa-long-arrow-alt-right"></i> Atendimento ao cliente
+                                </li>
+                                <li>
+                                    <i class="fas fa-long-arrow-alt-right"></i> Análise de requisitos
+                                </li>
+                                <li>
+                                    <i class="fas fa-long-arrow-alt-right"></i> Gerenciamento
+                                </li>
+                                <li>
+                                    <i class="fas fa-long-arrow-alt-right"></i> Suporte Técnico
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-sm text-center">
-                            second of three columns
+                        <div class="col-sm">
+                            <h5>Thiago Túlio Brandão Silva:</h5>
+                            <img src="util/home/thiago.png" width="150px;" style="margin-bottom: 10px;" />
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fas fa-long-arrow-alt-right"></i> Desenvolvimento visual
+                                </li>
+                                <li>
+                                    <i class="fas fa-long-arrow-alt-right"></i> Desenvolvimento de funcionalidades
+                                </li>
+                                <li>
+                                    <i class="fas fa-long-arrow-alt-right"></i> Suporte técnico
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="servicos">
+            <div class="container-fluid">
+                <div class="container floating-text text-center">
+                    <h1 class="display-4" style="margin-bottom: 2rem">SERVIÇOS</h1>
+                    <div class="row">
+                        <div class="col" id="sistema">
+                            <div class="card text-center" style="max-width: 100%;">
+                                <div class="card-body">
+                                    <img src="util/home/sisdev.png" style="margin: 1rem 0 1rem 0;" />
+                                    <h5 class="card-title">Sistema de Gerenciamento</h5>
+                                    <p class="card-text">Tenha controle do seu negócio, de maneira fácil e descomplicada,
+                                        sempre ao alcance de suas mãos. Identifique as partes mais lucrativas através de nossos relatórios.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="site">
+                            <div class="card text-center" style="max-width: 100%;">
+                                <div class="card-body">
+                                    <img src="util/home/webdev.png" style="margin: 1rem 0 1rem 0;" />
+                                    <h5 class="card-title">Páginas Web</h5>
+                                    <p class="card-text">Leve todas as características do seu negócio para seu cliente,
+                                        com um site exclusivo que carrega consigo todas as características da sua empresa e do seu produto.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="contato">
+            <div class="container-fluid">
+                <h1 class="display-4 text-center">CONTATO</h1><br>
+
+                <div class="container" style="padding: 0 18% 0 18%">
+                    <div class="row">
+                        <div class="col-sm text-justify">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h5>Informações</h5>
+                                </li>
+                                <li>
+                                    <a href="mailto:leandro@sigla.com.br"><i class="far fa-envelope"></i> leandro@sigla.com.br </a>
+                                </li>
+                                <li>
+                                    <a href="tel:5537999638523"><i class="fas fa-phone-square-alt"></i> +55 37 9 9963-8523 </a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-cloud-sun"></i> De segunda a domingo
+                                </li>
+                                <li>
+                                    <i class="far fa-clock"></i> Atendimento: 09:00 às 17:00hs
+                                </li>
+                            </ul>
                         </div>
                         <div class="col-sm text-center">
                             <ul class="list-unstyled">
                                 <li>
-                                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537988434097&text=ola"><i class="fab fa-whatsapp"></i> WhatsApp </a>
+                                    <h5>Mídias Sociais</h5>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/siglalp"><i class="fab fa-instagram"></i> Instagram </a>
+                                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537999638523&text=Olá, tudo bem?" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp </a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fab fa-facebook-square"></i> <i class="fab fa-facebook-f"></i>acebook </a>
+                                    <a href="https://www.instagram.com/siglalp" target="_blank"><i class="fab fa-instagram"></i> Instagram </a>
                                 </li>
                             </ul>
-                        </div><br>
+                        </div>
                     </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 2rem">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h5><i class="fas fa-map-marker-alt"></i> Localização: <br>Rua Raul Gomes Bernardes, 2250 <br>Lagoa da Prata, 35590-000, Minas Gerais - Brasil</h5>
+                        </li>
+                        <li>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.4756313062994!2d-45.52303368446689!3d-20.030510946616882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b37be3823522f3%3A0x30686bfccf4355fa!2sR.%20Raul%20Gomes%20Bernardes%2C%202250%20-%20Lagoa%20Da%20Prata%2C%20Lagoa%20da%20Prata%20-%20MG%2C%2035590-000!5e0!3m2!1spt-BR!2sbr!4v1587102102209!5m2!1spt-BR!2sbr" width="700" height="525" frameborder="0" style="border:0; max-width: 100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>

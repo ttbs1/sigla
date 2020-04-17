@@ -14,50 +14,75 @@ font-family: 'sketch';
         url('util/fonts/sketch3D.ttf') format('truetype');
 }
 
-.home_upper {
-    background-image: url(util/home/1.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #ffffff;
-    text-shadow: 1px 1px #000;
-    padding-top: 250px;
-    padding-bottom: 250px;
-}
-
-.home_middle {
-    background-color: #f3f3f3;
-    padding-top: 250px;
-    padding-bottom: 250px;
-}
-
-.home_middle_2 {
+.inicio {
     background-image: url(util/home/2.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: #ffffff;
-    text-shadow: 1px 1px #000;
-    padding-top: 250px;
-    padding-bottom: 250px;
-}
-
-.home_footer {
-    background-image: linear-gradient(#aaaaaa, #999999 ,#888888 ,#777777 ,#666666 ,#555555 ,#444444 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333);
-    padding-top: 100px;
-    padding-bottom: 100px;
     color: #fff;
-    text-shadow: 2px 2px #f58220;
+    font-size: large;
+    text-shadow: 1px 1px 2px #000;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
-.home_footer .display-4 {
-    font-family: 'Londrina Sketch';
+h1 {
+    
+    font-family: 'Black Ops One';
+    text-shadow: -3px 3px 1px #f58220;
 }
 
-.home_footer a {
+.sobre {
+    background-color: #f3f3f3;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    font-size: large;
+}
+
+.servicos {
+    background-image: url(util/home/1.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.servicos h1 {
+    color: #fff;
+}
+
+.contato {
+    background-image: linear-gradient(#aaaaaa, #999999 ,#888888 ,#777777 ,#666666 ,#555555 ,#444444 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333);
+    padding-top: 80px;
+    padding-bottom: 50px;
     color: #fff;
     text-shadow: 1px 1px #f58220;
     font-size: large;
+}
+
+
+.contato a {
+    color: #fff;
+}
+
+.nocolor {
+    padding: 4%;
+}
+
+.floating-text {
+    padding: 4%;
+    border-radius: 20px;
+    background: rgba(245, 130, 32, 0.45);
+    background: rgba(105, 105, 105, 0.91);
+}
+
+p {
+    font-size: larger;
+}
+
+.card {
+    margin-bottom: 1rem;
 }
