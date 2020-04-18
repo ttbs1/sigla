@@ -85,4 +85,6 @@ p {
 
 .card {
     margin-bottom: 1rem;
+    font-size: small;
+    width: 17rem;
 }
