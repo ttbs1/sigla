@@ -55,17 +55,17 @@ h1 {
 }
 
 .contato {
-    background-image: linear-gradient(#aaaaaa, #999999 ,#888888 ,#777777 ,#666666 ,#555555 ,#444444 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333);
+    background-image: linear-gradient(#aaaaaa, #999999 ,#888888 ,#777777 ,#666666 ,#555555 ,#444444 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333);
     padding-top: 80px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     color: #fff;
-    text-shadow: 1px 1px #f58220;
+    text-shadow: 1px 1px #000;
     font-size: large;
 }
 
 
 .contato a {
-    color: #fff;
+    color: #f2f3f4;
 }
 
 .nocolor {
@@ -87,4 +87,31 @@ p {
     margin-bottom: 1rem;
     font-size: small;
     width: 17rem;
+}
+
+.nav-item a:hover {
+    background-color: #f58220;
+    color: #fff !important;
+    text-shadow: 1px 1px #000;
+}
+
+.modal-header {
+    background-image: linear-gradient(to right, #f98220, #fff);
+    color: #fff !important;
+    text-shadow: 1px 1px #000;
+}
+
+.footer {
+    height: 35px;
+    color: #919191;
+    text-shadow: 1px 1px #000;
+    background-color: #28292b;
+}
+
+.footer a {
+    color: #919191;
+}
+
+.footer a:hover {
+    color: #fff;
 }
