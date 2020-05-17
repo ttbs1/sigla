@@ -94,9 +94,9 @@ and open the template in the editor.
             <div class="container-fluid">
                 <div class="container nocolor text-center">
                     <h1 class="display-4">SOBRE</h1>
-                    <p><strong>Equipe:</strong></p>
+                    <p style="margin-top: 20px;"><strong>Equipe:</strong></p>
                     <div class="row">
-                        <div class="col-sm">
+                        <div class="col-sm" style="margin-top: 20px;">
                             <h5>Leandro Rodrigues da Silva:</h5>
                             <img src="util/home/thiago2.png" width="150px;" style="margin-bottom: 10px;" />
                             <ul class="list-unstyled">
@@ -117,7 +117,7 @@ and open the template in the editor.
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-sm">
+                        <div class="col-sm" style="margin-top: 20px;">
                             <h5>Thiago Túlio Brandão Silva:</h5>
                             <img src="util/home/thiago.png" width="150px;" style="margin-bottom: 10px;" />
                             <ul class="list-unstyled">
@@ -132,6 +132,12 @@ and open the template in the editor.
                                 </li>
                             </ul>
                         </div>
+                    </div>
+
+                    <p style="margin-top: 100px"><strong>Tecnologias:</strong></p>
+                    <input type="hidden" id="sequencia" value="0" />
+                    <div id="tecnologias" class="row mw-100" style="margin-top: 20px;">
+
                     </div>
                 </div>
             </div>
@@ -205,7 +211,7 @@ and open the template in the editor.
                                     <a href="javascript:;" data-toggle="modal" data-target="#modalFormulario"><i class="far fa-paper-plane"></i> Envie uma mensagem</a>
                                 </li>
                                 <li>
-                                    <a href="mailto:leandro@sigla.com.br"><i class="far fa-envelope"></i> leandro@sigla.com.br </a>
+                                    <a href="mailto:leandro160490@gmail.com"><i class="far fa-envelope"></i> leandro160490@gmail.com </a>
                                 </li>
                                 <li>
                                     <a href="tel:5537999638523"><i class="fas fa-phone-square-alt"></i> +55 37 9 9963-8523 </a>
@@ -273,7 +279,7 @@ and open the template in the editor.
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
-                            <div class="row">
+                            <!--<div class="row">
                                 <div class="col-md-6 text-justify" >
                                     <strong>Sistema Sommus:</strong> <br>
                                     Escrever algo sobre o sistema da sommus <br>
@@ -293,12 +299,8 @@ and open the template in the editor.
                                         <div class="col"><i class="fab fa-php" style="color: rgb(104,122,177); font-size: 40px;"></i><br>php</div>
                                         <div class="col"><img src="util/home/mysql.png" width="40px"/><br>Mysql</div>
                                     </div>
-                                    <input type="hidden" id="sequencia" value="0" />
-                                    <div id="tecnologias" class="row mw-100" style="margin-top: 8px;">
-
-                                    </div>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -334,11 +336,12 @@ and open the template in the editor.
                 '<div class="col" style="max-width: 20%;"><i class="fab fa-css3-alt" style="color: rgb(40,163,218); font-size: 40px"></i><br>CSS</div>',
                 '<div class="col" style="max-width: 20%;"><i class="fab fa-js-square" style="color: rgb(248,211,56); font-size: 40px"></i><br>JS</div>',
                 '<div class="col" style="max-width: 20%;"><i class="fab fa-php" style="color: rgb(104,122,177); font-size: 40px;"></i><br>php</div>',
-                '<div class="col" style="max-width: 20%;"><img src="util/home/mysql.png" width="40px"/><br>Mysql</div>'
+                '<div class="col" style="max-width: 20%;"><img src="util/home/mysql.png" width="40px"/><br>Mysql</div>',
+                '<div class="col" style="max-width: 20%;"><img src="util/home/bootstrap.png" width="40px"/><br>Bootstrap</div>'
             ];
 
             var aux = '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="back();"><i class="fas fa-chevron-left" style="font-size: 20px"></i></button></div>';
-            for (var i = 0; i < 3; i++)
+            for (var i = 0; i < 5; i++)
                 aux += list[i];
             aux += '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="next();"><i class="fas fa-chevron-right" style="font-size: 20px"></i></button></div>';
 
@@ -362,10 +365,10 @@ and open the template in the editor.
                 seq.value = parseInt(seq.value) + 1;
                 if (parseInt(seq.value) > list.length)
                     seq.value = 1;
-                if (parseInt(seq.value) + 3 <= list.length)
-                    var end = parseInt(seq.value) + 3;
+                if (parseInt(seq.value) + 5 <= list.length)
+                    var end = parseInt(seq.value) + 5;
                 else
-                    var end = parseInt(seq.value) + 3 - list.length;
+                    var end = parseInt(seq.value) + 5 - list.length;
 
                 var aux = '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="back();"><i class="fas fa-chevron-left" style="font-size: 20px"></i></button></div>';
                 for (var i = parseInt(seq.value); i !== end; i++)
