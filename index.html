@@ -200,7 +200,7 @@ and open the template in the editor.
 
                 <div class="container" style="padding: 0 13% 0 13%">
                     <div class="row">
-                        <div class="col-sm">
+                        <div id="contact" class="col-sm text-center">
                             <ul class="list-unstyled">
                                 <li>
                                     <h5>Informações</h5>
@@ -222,7 +222,7 @@ and open the template in the editor.
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-sm text-right">
+                        <div id="socials" class="col-sm text-center">
                             <ul class="list-unstyled">
                                 <li>
                                     <h5>Mídias Sociais</h5>
@@ -237,6 +237,15 @@ and open the template in the editor.
                         </div>
                     </div>
                 </div>
+
+                <script>
+                    if (window.innerHeight < window.innerWidth) {
+                        document.getElementById("contact").classList.remove('text-center');
+                        document.getElementById("contact").classList.add('text-left');
+                        document.getElementById("socials").classList.remove('text-center');
+                        document.getElementById("socials").classList.add('text-right');
+                    }
+                </script>
 
                 <div class="text-center" style="margin-top: 2rem">
                     <ul class="list-unstyled">
@@ -355,7 +364,7 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modalMobile" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
@@ -422,8 +431,12 @@ and open the template in the editor.
                 '<div class="col" style="max-width: 20%;"><img src="util/home/bootstrap.png" width="40px"/><br>Boot<br>strap</div>'
             ];
 
+            var quantidade = 5;
+            if (window.innerHeight > window.innerWidth)
+                quantidade = 3;
+
             var aux = '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="back();"><i class="fas fa-chevron-left" style="font-size: 20px"></i></button></div>';
-            for (var i = 0; i < 3; i++)
+            for (var i = 0; i < quantidade; i++)
                 aux += list[i];
             aux += '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="next();"><i class="fas fa-chevron-right" style="font-size: 20px"></i></button></div>';
 
@@ -447,10 +460,10 @@ and open the template in the editor.
                 seq.value = parseInt(seq.value) + 1;
                 if (parseInt(seq.value) > list.length)
                     seq.value = 1;
-                if (parseInt(seq.value) + 3 <= list.length)
-                    var end = parseInt(seq.value) + 3;
+                if (parseInt(seq.value) + quantidade <= list.length)
+                    var end = parseInt(seq.value) + quantidade;
                 else
-                    var end = parseInt(seq.value) + 3 - list.length;
+                    var end = parseInt(seq.value) + quantidade - list.length;
 
                 var aux = '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="back();"><i class="fas fa-chevron-left" style="font-size: 20px"></i></button></div>';
                 for (var i = parseInt(seq.value); i !== end; i++)
