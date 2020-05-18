@@ -134,7 +134,7 @@ and open the template in the editor.
                         </div>
                     </div>
 
-                    <p style="margin-top: 100px"><strong>Tecnologias:</strong></p>
+                    <p style="margin-top: 100px"><strong>Algumas tecnologias:</strong></p>
                     <input type="hidden" id="sequencia" value="0" />
                     <div id="tecnologias" class="row mw-100" style="margin-top: 20px;">
 
@@ -166,7 +166,7 @@ and open the template in the editor.
                                     <h5 class="card-title">Páginas Web</h5>
                                     <p class="card-text">Leve todas as características do seu negócio para seu cliente,
                                         com um site exclusivo que carrega consigo todas as características da sua empresa e do seu produto.</p>
-                                    <a href="javascript:;" class="btn btn-link">construindo</a>
+                                    <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalSite">Mais detalhes</a>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +177,7 @@ and open the template in the editor.
                                     <h5 class="card-title">Aplicativo Mobile</h5>
                                     <p class="card-text">Desenvolva sua aplicação para Android, iOS e Windows Phone,
                                         contando com uma vasta gama de recursos, sem deixar que isso reflita no valor do orçamento.</p>
-                                    <a href="javascript:;" class="btn btn-link">construindo</a>
+                                    <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalMobile">Mais detalhes</a>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +188,6 @@ and open the template in the editor.
                                     <h5 class="card-title">Outros</h5>
                                     <p class="card-text">Possui uma ideia promissora e quer empreender, 
                                         mas não domina as ferramentas necessárias para colocá-la em prática? Entre em contato, vamos conversar e fazer um orçamento.</p>
-                                    <a href="javascript:;" class="btn btn-link">construindo</a>
                                 </div>
                             </div>
                         </div>
@@ -200,7 +199,7 @@ and open the template in the editor.
             <div class="container-fluid">
                 <h1 class="display-4 text-center">CONTATO</h1><br>
 
-                <div class="container" style="padding: 0 16% 0 16%">
+                <div class="container" style="padding: 0 13% 0 13%">
                     <div class="row">
                         <div class="col-sm">
                             <ul class="list-unstyled">
@@ -220,11 +219,11 @@ and open the template in the editor.
                                     <i class="far fa-clock"></i> Atendimento: 09:00 às 17:00hs <i class="fas fa-cloud-sun"></i> de segunda a domingo
                                 </li>
                                 <li>
-                                    
+
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-sm text-center">
+                        <div class="col-sm text-right">
                             <ul class="list-unstyled">
                                 <li>
                                     <h5>Mídias Sociais</h5>
@@ -279,28 +278,31 @@ and open the template in the editor.
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
-                            <!--<div class="row">
-                                <div class="col-md-6 text-justify" >
-                                    <strong>Sistema Sommus:</strong> <br>
-                                    Escrever algo sobre o sistema da sommus <br>
+                            <div class="row">
+                                <div class="col-md-6 text-justify">
+                                    Sistemas de gerenciamento comercial para: <br><br>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fas fa-utensils" style="color: darkred;"></i> Bares e Restaurantes
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-store-alt" style="color: green;"></i> Varejo
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-gas-pump" style="color: #d39e00;"></i> Posto de gasolina
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-pills" style="color: lightpink"></i> Farmácia
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-users" style="color: lightsteelblue"></i> Coordenação e gerenciamento de equipe e tarefas
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="col-md-6 text-justify" >
-                                    <strong>Sistema Web:</strong> <br>
-                                    Gerencie sua empresa com um sistema despojado e leve,
-                                    garantindo performace e praticidade ao usar tecnologias
-                                    atuais, permitindo acesso através de qualquer dispositivo
-                                    que tenha um navegador de acesso a internet. O sistema 
-                                    poderá ser alocado na rede local ou online.<br><br>
-                                    <strong>Tecnologias:</strong> 
-                                    <div class="row" style="margin-top: 8px">
-                                        <div class="col"><i class="fab fa-html5" style="color: rgb(237,118,50); font-size: 40px"></i><br>HTML</div>
-                                        <div class="col"><i class="fab fa-css3-alt" style="color: rgb(40,163,218); font-size: 40px"></i><br>CSS</div>
-                                        <div class="col"><i class="fab fa-js-square" style="color: rgb(248,211,56); font-size: 40px"></i><br>JS</div>
-                                        <div class="col"><i class="fab fa-php" style="color: rgb(104,122,177); font-size: 40px;"></i><br>php</div>
-                                        <div class="col"><img src="util/home/mysql.png" width="40px"/><br>Mysql</div>
-                                    </div>
+                                <div class="col-md-6 text-justify">
+                                    Também é possível customizar as funcionalidades dos sistemas pré existentes, ou até mesmo planejar e criar do zero algo com todas as funcionalidades necessárias para suprir sua demanda.
                                 </div>
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -310,14 +312,95 @@ and open the template in the editor.
             </div>
         </div>
 
+        <div class="modal fade" id="modalSite" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Páginas Web: </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 text-justify">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fas fa-expand-alt" style="color: darkred;"></i> Tamanho adaptável a qualquer dispositivo, sem perder a essência característica do layout
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-dice-d6" style="color: green;"></i> Design planejado para combinar com o tipo do seu negócio, a fim de conquistar e prender a atenção do seu cliente
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-network-wired" style="color: #d39e00;"></i> Podemos cuidar da hospedagem e gerenciamento de arquivos do seu site, bem como de atualizações e novas publicações que possam aparecer, para que você possa se despreocupar e manter o foco no seu negócio
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 text-justify">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fas fa-poll" style="color: lightpink"></i> Além da função de divulgar e enaltecer a qualidade e os serviços de seu estabelecimento, você pode usar sua criatividade para dar mais utilidade a sua página, como por exemplo, receber currículos, estabelecer comunicação com seu cliente ou funcionário, receber feedback de serviços, catalogar produtos, entre outros. Nos conte a sua idéia, que iremos te ajudar
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-level-up-alt" style="color: lightsteelblue"></i> Alta disponibilidade de recursos visuais e dinâmicos
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modalMobile" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Aplicativo Mobile: </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 text-justify">
+                                    Muitos de nossos sistemas de gerenciamento já contam com aplicativos para dispositivos móveis, bem como as páginas web que são desenvolvidas irão se adaptar em todas as suas funcionalidades.
+                                </div>
+                                <div class="col-md-6 text-justify">
+                                    Além dos nossos apps, é possível desenvolver aplicações a partir do zero para todos os tipos de dispositivos móveis (Android, iOS, Windows Phone). Entre em contato para saber mais. Iremos verificar a viabilidade da sua idéia e preparar um orçamento.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="modal fade" id="modalFormulario" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                     <div class="modal-body">
                         <div class="row justify-content-center">
                             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrbyI1-qH2piUvekSXhPMaC65s8hZvPROOxMTMDFlF5YOJpg/viewform?embedded=true" width="700" height="575" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
                         </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
                     </div>
                 </div>
             </div>
@@ -337,11 +420,11 @@ and open the template in the editor.
                 '<div class="col" style="max-width: 20%;"><i class="fab fa-js-square" style="color: rgb(248,211,56); font-size: 40px"></i><br>JS</div>',
                 '<div class="col" style="max-width: 20%;"><i class="fab fa-php" style="color: rgb(104,122,177); font-size: 40px;"></i><br>php</div>',
                 '<div class="col" style="max-width: 20%;"><img src="util/home/mysql.png" width="40px"/><br>Mysql</div>',
-                '<div class="col" style="max-width: 20%;"><img src="util/home/bootstrap.png" width="40px"/><br>Bootstrap</div>'
+                '<div class="col" style="max-width: 20%;"><img src="util/home/bootstrap.png" width="40px"/><br>Boot<br>strap</div>'
             ];
 
             var aux = '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="back();"><i class="fas fa-chevron-left" style="font-size: 20px"></i></button></div>';
-            for (var i = 0; i < 5; i++)
+            for (var i = 0; i < 3; i++)
                 aux += list[i];
             aux += '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="next();"><i class="fas fa-chevron-right" style="font-size: 20px"></i></button></div>';
 
@@ -365,10 +448,10 @@ and open the template in the editor.
                 seq.value = parseInt(seq.value) + 1;
                 if (parseInt(seq.value) > list.length)
                     seq.value = 1;
-                if (parseInt(seq.value) + 5 <= list.length)
-                    var end = parseInt(seq.value) + 5;
+                if (parseInt(seq.value) + 3 <= list.length)
+                    var end = parseInt(seq.value) + 3;
                 else
-                    var end = parseInt(seq.value) + 5 - list.length;
+                    var end = parseInt(seq.value) + 3 - list.length;
 
                 var aux = '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="back();"><i class="fas fa-chevron-left" style="font-size: 20px"></i></button></div>';
                 for (var i = parseInt(seq.value); i !== end; i++)
