@@ -14,6 +14,10 @@ font-family: 'sketch';
         url('util/fonts/sketch3D.ttf') format('truetype');
 }
 
+html{
+   scroll-behavior: smooth;
+}
+
 .inicio {
     background-image: url(util/home/2.jpg);
     background-position: center top;
